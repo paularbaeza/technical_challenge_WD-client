@@ -18,8 +18,6 @@ function PhoneDetails() {
   const getPhoneDetails = async () => {
     try {
       const response = await getPhoneDetailsService(phoneId);
-      console.log(phoneId);
-      console.log(response.data[0]);
       setPhoneDetails(response.data[0]);
       setIsFetching(false);
     } catch (error) {
@@ -34,19 +32,19 @@ function PhoneDetails() {
   return (
     <div id="phoneDetails">
       <h1>{phoneDetails.name}</h1>
+      <h4>{phoneDetails.manufacturer}</h4>
       <img
         src={`/assets/images/${phoneDetails.imageFileName}`}
         alt="imagen"
-        width="300px"
       />
-
-      <h4>{phoneDetails.manufacturer}</h4>
+    <div id="phone-data">
       <p>{phoneDetails.description}</p>
       <p>Color: {phoneDetails.color}</p>
       <p>Price: {phoneDetails.price}</p>
       <p>Processor: {phoneDetails.processor}</p>
       <p>Ram: {phoneDetails.ram}</p>
       <p>Screen: {phoneDetails.screen}</p>
+      </div>
     </div>
   );
 }

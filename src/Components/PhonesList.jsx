@@ -18,7 +18,6 @@ function Home() {
   const getPhonesList = async () => {
     try {
       const response = await getPhonesListService();
-      console.log(response.data)
       setPhonesList(response.data);
       setIsFetching(false);
 

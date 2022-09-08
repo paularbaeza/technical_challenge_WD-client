@@ -1,28 +1,76 @@
-.App{
-    display:flex;
-    flex-direction: row;
-    
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dawning+of+a+New+Day&family=Indie+Flower&family=Passion+One:wght@700&family=Rubik+Dirt&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: row;
+  background-color: #e2e5df;
+  min-height: 100vh;
 }
 
-#phoneDetails{
-    max-width: 50%;
-    text-align: center;
-    margin-right:200px
+#phoneDetails {
+  max-width: 50%;
+  text-align: center;
+  background-color: white;
+  border-radius: 40px;
+  margin: 3.5%;
+  box-shadow: 6px 6px 15px 6px #888888;
 }
 
-#phonesList{
-    margin:50px;
-    background-color: rgb(225, 241, 209);
-    padding:10px;
-    border-radius: 10px;
-    box-shadow: 6px 6px 15px 6px #888888;
-    height:100%
+#phoneDetails img{
+    width:50%
+  }
+
+#phoneDetails h1 {
+    text-shadow: 5px 5px 10px #888888;
 }
 
-#each-phone{
-    margin:10px;
+#phonesList {
+  margin: 50px;
+  background-color: rgb(225, 241, 209);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 15px 6px #888888;
+  height: 40%;
+  font-weight: bold;
 }
 
-.no-decoration{
-    text-decoration: none;
+
+
+#each-phone {
+  margin: 10px;
+}
+#phone-data {
+  margin: 0px 50px 40px 50px;
+}
+
+#home-page {
+  text-align: center;
+  font-family: Rubik Dirt;
+  font-weight: light;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+#home-page h1 {
+  color: #71875b;
+  text-shadow: 5px 5px 15px #888888;
+}
+#home-page h3 {
+  color: #5a5b59;
+  text-shadow: 5px 5px 15px #888888;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.error-notfound {
+  width: 70%;
+  height: fit-content;
+  text-align: center;
+  margin-right: 200px;
+  background-color: white;
+  border-radius: 40px;
+  margin: 50px;
+  box-shadow: 6px 6px 15px 6px #888888;
 }
